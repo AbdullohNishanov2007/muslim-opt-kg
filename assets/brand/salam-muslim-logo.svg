@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 220" role="img" aria-labelledby="title desc">
+  <title id="title">SALAM Muslim</title>
+  <desc id="desc">Логотип SALAM Muslim с оливковыми листьями</desc>
+  <rect width="560" height="220" rx="18" fill="#fffdf4"/>
+  <g transform="translate(64 10) rotate(-24)">
+    <ellipse cx="30" cy="58" rx="18" ry="34" fill="#9ab73f"/>
+    <ellipse cx="25" cy="58" rx="9" ry="27" fill="#c5d95a" opacity=".75"/>
+    <path d="M32 23c12 23 11 47-2 70" fill="none" stroke="#5f7c2b" stroke-width="2" opacity=".65"/>
+    <path d="M30 32C57 8 94 6 126 19 95 32 64 46 31 70Z" fill="#4f7b42"/>
+    <path d="M41 36c30-16 52-20 78-17" fill="none" stroke="#9fb483" stroke-width="5" opacity=".75"/>
+    <path d="M31 68C60 53 94 52 127 67 94 81 62 83 31 68Z" fill="#6f914f"/>
+    <path d="M42 68c28-8 50-9 76-2" fill="none" stroke="#b6c69c" stroke-width="5" opacity=".7"/>
+    <path d="M27 41C18 31 8 26 0 25" fill="none" stroke="#5f6f34" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(440 133) rotate(-18)">
+    <path d="M0 38C32 5 78 1 116 19 82 37 44 54 0 58Z" fill="#5d8647"/>
+    <path d="M14 42c28-14 58-20 91-22" fill="none" stroke="#a9bd90" stroke-width="7" opacity=".72"/>
+  </g>
+  <text x="42" y="132" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="700" letter-spacing="9" fill="#050505">SALAM</text>
+  <text x="198" y="184" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="400" letter-spacing="1" fill="#111">Muslim</text>
+</svg>

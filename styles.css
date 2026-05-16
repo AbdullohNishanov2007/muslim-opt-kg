@@ -1071,3 +1071,68 @@ h1 {
     min-height: 50px;
   }
 }
+
+.brand--logo {
+  min-width: 210px;
+}
+
+.brand__logo {
+  width: 210px;
+  height: 82px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 980px) {
+  .brand--logo {
+    min-width: 170px;
+  }
+
+  .brand__logo {
+    width: 170px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand--logo {
+    min-width: 142px;
+  }
+
+  .brand__logo {
+    width: 142px;
+    height: 54px;
+  }
+}
+
+/* Final logo sizing pass. */
+.brand--logo {
+  min-width: 172px;
+}
+
+.brand__logo {
+  width: 172px;
+  height: 62px;
+}
+
+@media (max-width: 980px) {
+  .brand--logo {
+    min-width: 150px;
+  }
+
+  .brand__logo {
+    width: 150px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand--logo {
+    min-width: 128px;
+  }
+
+  .brand__logo {
+    width: 128px;
+    height: 48px;
+  }
+}
