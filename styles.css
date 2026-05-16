@@ -695,7 +695,7 @@ h3 {
   object-fit: cover;
 }
 
-.supplier-card div {
+.supplier-card > div {
   display: grid;
   align-content: start;
   gap: 12px;
@@ -798,7 +798,7 @@ h3 {
     padding: 8px;
   }
 
-  .supplier-card div {
+  .supplier-card > div {
     padding: 18px;
   }
 
@@ -1134,5 +1134,125 @@ h1 {
   .brand__logo {
     width: 128px;
     height: 48px;
+  }
+}
+
+/* Compact marketplace-style product cards. */
+.products-showcase .section__head {
+  margin-bottom: 22px;
+}
+
+.product-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.supplier-card {
+  grid-template-rows: auto 1fr;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(40, 47, 32, .08);
+}
+
+.supplier-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #f7f4ec;
+  padding: 6px;
+}
+
+.supplier-card > div {
+  gap: 7px;
+  padding: 10px 11px 12px;
+}
+
+.supplier-card h3 {
+  display: -webkit-box;
+  min-height: 38px;
+  margin: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.product-tag {
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border-radius: 0;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.supplier-card .price-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.supplier-card .price-row strong {
+  width: auto;
+  padding: 0;
+  border: 0;
+  color: var(--clay);
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.supplier-card .price-row span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+@media (max-width: 980px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .products-showcase {
+    width: min(100% - 18px, 1180px);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .supplier-card {
+    grid-template-rows: auto 1fr;
+  }
+
+  .supplier-card img {
+    height: auto;
+    padding: 5px;
+  }
+
+  .supplier-card > div {
+    padding: 8px 8px 10px;
+  }
+
+  .supplier-card h3 {
+    min-height: 34px;
+    font-size: 14px;
+  }
+
+  .product-tag {
+    font-size: 10px;
+  }
+
+  .supplier-card .price-row strong {
+    font-size: 14px;
+  }
+
+  .supplier-card .price-row span {
+    font-size: 11px;
   }
 }
