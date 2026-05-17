@@ -1,0 +1,118 @@
+/* CONTACTS */
+
+.lead,
+.section__head p,
+.contact-section p {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.hero__actions,
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.hero__media img,
+.split__image,
+.delivery img,
+.contact-section img,
+.category-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.contact-section {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(320px, 1.05fr);
+  gap: clamp(28px, 5vw, 68px);
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 42px;
+  background: var(--paper);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.contact-section img { aspect-ratio: 16 / 9; }
+
+.mobile-cta { display: none; }
+
+.button--primary .social-icon,
+.mobile-cta a:first-child .social-icon {
+  color: #fff;
+}
+
+.button--secondary .social-icon,
+.footer-social .social-icon,
+.mobile-cta a:last-child .social-icon {
+  color: var(--leaf-dark);
+}
+
+.contact-section--logos {
+  grid-template-columns: minmax(0, .82fr) minmax(380px, 1.18fr);
+  align-items: center;
+}
+
+.contact-logo-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.logo-contact {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  align-items: center;
+  gap: 16px;
+  min-height: 118px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid rgba(103, 134, 78, .18);
+  border-radius: 8px;
+  box-shadow: 0 16px 34px rgba(40, 47, 32, .1);
+}
+
+.logo-contact img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.logo-contact strong,
+.logo-contact small {
+  display: block;
+}
+
+.logo-contact strong {
+  color: var(--ink);
+  font-size: 21px;
+  line-height: 1.05;
+}
+
+.logo-contact small {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.logo-contact--telegram strong { color: #168ac2; }
+
+.logo-contact--whatsapp strong { color: #168f47; }
+
+.logo-contact--instagram strong { color: #c02a77; }
+
+.logo-contact--phone strong { color: var(--leaf-dark); }
+
+.logo-contact--phone {
+  background: var(--leaf);
+}
+
+.logo-contact--phone strong,
+.logo-contact--phone small {
+  color: #fff;
+}

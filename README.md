@@ -1,16 +1,17 @@
-﻿# muslim-opt-kg
+# CSS split
 
-Одностраничный лендинг для оптовых мусульманских товаров из Кыргызстана.
+Скопируй `styles.css` и папку `css/` в корень проекта.
 
-## Что внутри
+Команды:
 
-- Статический сайт на HTML, CSS и JavaScript
-- Адаптивная верстка для телефона, планшета и компьютера
-- SEO meta-теги и schema.org
-- Локальные изображения в `assets/images`
-- CTA-ссылки на WhatsApp и Telegram
+```bash
+cp -r css styles.css /path/to/your/project/
+```
 
-## Контакты
+Потом:
 
-WhatsApp: +996 504 070 111
-Telegram: https://t.me/your_channel
+```bash
+git add .
+git commit -m "Split CSS into modules"
+git push origin main
+```

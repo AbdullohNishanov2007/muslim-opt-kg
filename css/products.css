@@ -1,0 +1,303 @@
+/* PRODUCTS */
+
+.products-showcase {
+  padding-top: 64px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.supplier-card {
+  display: grid;
+  grid-template-rows: 280px 1fr;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid rgba(103, 134, 78, .16);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.supplier-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.supplier-card > div {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 22px;
+}
+
+.supplier-card h3 {
+  margin-bottom: 0;
+  font-size: 25px;
+}
+
+.supplier-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.supplier-card strong {
+  color: var(--leaf-dark);
+  font-size: 24px;
+}
+
+.supplier-card a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 4px;
+  padding: 10px 14px;
+  color: #fff;
+  background: var(--leaf);
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+.product-tag {
+  width: max-content;
+  max-width: 100%;
+  padding: 6px 10px;
+  color: var(--leaf-dark);
+  background: rgba(103, 134, 78, .12);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* Show product photos fully without cropping. */
+.supplier-card {
+  grid-template-rows: minmax(300px, auto) 1fr;
+}
+
+.supplier-card img {
+  height: 300px;
+  object-fit: contain;
+  background: #f7f4ec;
+  padding: 10px;
+}
+
+.hero__facts span,
+.intro-strip div,
+.category-card,
+.supplier-card,
+.benefit-list div,
+.delivery__grid article,
+.contact-section,
+.logo-contact {
+  border-color: rgba(103, 134, 78, .12);
+}
+
+.category-card,
+.supplier-card,
+.contact-section,
+.intro-strip,
+.delivery__poster {
+  box-shadow: 0 18px 46px rgba(40, 47, 32, .1);
+}
+
+.button,
+.header-cta,
+.supplier-card a,
+.logo-contact {
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+
+.button:hover,
+.header-cta:hover,
+.supplier-card a:hover,
+.logo-contact:hover {
+  transform: translateY(-2px);
+}
+
+.supplier-card strong {
+  width: max-content;
+  padding: 4px 0;
+  border-bottom: 2px solid rgba(215, 180, 95, .65);
+}
+
+.supplier-card a.more-link {
+  justify-content: space-between;
+  width: 100%;
+  min-height: 46px;
+  margin-top: 6px;
+  padding: 11px 14px;
+  color: var(--leaf-dark);
+  background: rgba(103, 134, 78, .1);
+  border: 1px solid rgba(103, 134, 78, .16);
+  box-shadow: none;
+}
+
+.supplier-card a.more-link span {
+  display: inline-grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  color: #fff;
+  background: var(--leaf);
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform .18s ease;
+}
+
+.supplier-card a.more-link:hover {
+  background: rgba(103, 134, 78, .16);
+}
+
+.supplier-card a.more-link:hover span {
+  transform: translateX(3px);
+}
+
+/* Compact marketplace-style product cards. */
+
+.products-showcase .section__head {
+  margin-bottom: 22px;
+}
+
+.product-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.supplier-card {
+  grid-template-rows: auto 1fr;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(40, 47, 32, .08);
+}
+
+.supplier-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #f7f4ec;
+  padding: 6px;
+}
+
+.supplier-card > div {
+  gap: 7px;
+  padding: 10px 11px 12px;
+}
+
+.supplier-card h3 {
+  display: -webkit-box;
+  min-height: 38px;
+  margin: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.product-tag {
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border-radius: 0;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.supplier-card .price-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.supplier-card .price-row strong {
+  width: auto;
+  padding: 0;
+  border: 0;
+  color: var(--clay);
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.supplier-card .price-row span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+.products-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+/* === SUPER COMPACT SAME SIZE PRODUCT CARDS === */
+
+.product-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.supplier-card {
+  width: 100%;
+  max-width: 170px;
+  height: 265px;
+  margin: 0 auto;
+  grid-template-rows: 155px 1fr;
+  border-radius: 7px;
+}
+
+.supplier-card img {
+  width: 100%;
+  height: 155px;
+  aspect-ratio: unset;
+  object-fit: contain;
+  background: #f7f4ec;
+  padding: 4px;
+}
+
+.supplier-card > div {
+  display: grid;
+  gap: 4px;
+  padding: 7px 8px;
+}
+
+.product-tag {
+  padding: 3px 6px;
+  font-size: 9px;
+  border-radius: 5px;
+}
+
+.supplier-card h3 {
+  min-height: 30px;
+  font-size: 12px;
+  line-height: 1.2;
+  -webkit-line-clamp: 2;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.price-row strong {
+  font-size: 13px;
+}
+
+.price-row span {
+  font-size: 11px;
+}
+
+.products-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}

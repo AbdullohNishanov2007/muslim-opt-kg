@@ -1,0 +1,52 @@
+/* CARDS */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 22px;
+}
+
+.category-card {
+  display: grid;
+  min-height: 360px;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid rgba(103, 134, 78, .16);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.category-card img {
+  height: 260px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.category-card div { padding: 24px; }
+
+.category-card span {
+  color: var(--leaf-dark);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.category-card a {
+  color: var(--leaf-dark);
+  font-weight: 900;
+  border-bottom: 2px solid var(--gold);
+}
+
+.category-card--wide { grid-row: span 2; }
+
+.category-card--wide img { height: 430px; }
+
+.category-card--accent {
+  align-content: end;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(63, 93, 49, .95), rgba(103, 134, 78, .88)),
+    url("assets/images/categories-women.jpeg") center / cover;
+}
+
+.category-card--accent span,
+.category-card--accent p { color: #f5ecd9; }
